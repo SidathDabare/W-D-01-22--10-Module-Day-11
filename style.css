@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: auto;
+}
+body {
+    width: 100%;
+    background-color: rgb(231, 231, 231);
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+    width: 100%;
+    height: 8vh;
+    background-color: #1b2430;    
+}
+.navbar div {
+    width: 95%;
+    margin: auto;
+    
+}
+.logo{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 0 0 25px;
+    align-items: center;
+    justify-content: space-around;
+}
+/* .logo {
+   height: 40px;
+   padding: 8px 8px 0 0;
+} */
+.nav-link {
+    width: 100%;
+    height: 5vh;
+    background-color: #293d58;
+}
+ul.nav-items{
+    width: 55%; 
+    padding-top: 5px;
+    display: flex;
+    left: 0;
+    list-style: none;
+}
+/* li.nav-item a{
+    padding-top: 5px;
+    list-style: none;
+    text-decoration: none;
+} */
+.nav-items li a{
+    color: white;
+    margin-right: 25px;
+    padding-top: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    list-style: none;
+}
+.holiday-gift-card {
+    width: 95%;
+    height: 5vh;
+    background-color: rgb(207, 114, 7);
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    
+}
+.holiday-gift-card p{
+    color: white;
+    padding-top: 11px;
+}
+.holiday-guides{
+    width: 95%;
+    margin: auto;
+    margin-bottom: 25px;
+    position: relative;
+
+}
+.holiday-gift-guide{
+    position: absolute;
+    top: 30%;
+    left: 42%;
+    text-align: center;
+    color: white;
+}
+.holiday-gift-guide h2 p{
+    text-align: center;
+    padding: 10px;
+}
+.holiday-gift-guide p{
+    padding: 20px;
+}
+.bg-image {
+    width: 100%;
+}
+.find-gift {
+    width: 95%;
+    background-color: white;
+
+}
+.find-gift h4 {
+    padding-top: 20px;
+    padding-left: 25px;
+
+}
+.gift-items div{
+    width: 98%;
+    display: inline;
+    margin: auto;
+    
+}
+.gift-items h4 span{
+    color: rgb(33, 33, 182);
+    margin-left: 20px;
+    
+}
+.product-main-container{
+    position: relative;
+    width: 90%;
+    height: auto;
+    background-color: #1b2430;
+}
+ul.product-list {
+    list-style: none; 
+    width: 90%;
+    height: auto;  
+    position: relative; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-item{
+    background-color: rgb(215, 215, 215);
+    display: flex;
+    flex-direction: column;
+}
+.product-image{
+    width: 30%;
+}
+.product-container{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+.product-image-container{
+    position: absolute;
+    width: 30%;
+    height: auto;
+    left: 0;
+    /* background-color: #293d58; */
+}
+.product-image-container img {
+    width: 300px;
+    height: 300px;    
+    object-fit: cover;
+    border-radius: 10px;
+    justify-content: space-between;
+    box-shadow: 5px 5px 5px 5px rgba(150, 149, 149, 0.2);
+    margin: 27px;
+    
+    
+}
+.product-decription{
+    display: flex;
+    flex-direction: column;
+    max-width: 65%;
+    height: 300px;
+    position: absolute;
+    /* background-color: #293d58; */
+    left: 35%;
+    margin-top:20px ;
+    padding: 20px;
+    
+}
+.product-decription a{
+    text-decoration: none;
+    color: rgb(61, 60, 60);
+    
+}
+.product-name{
+    padding: 30px 0 30px 0;
+    font-size: 25px;
+    margin-left: 80px;
+}
+.newColor{
+    color: aqua;
+}
+.newBackground{
+    background-color: rgb(65, 66, 66);
+}
+p.description{
+    text-align: justify;
+    width: 80%;
+    padding: 30px 0 30px 0;
+    
+}
+.add-to-cart{
+    padding: 20px;
+    margin-left: 90px;
+    margin-top: 20px;
+}
+
+.footer{
+    width: 100%;
+}
+.buttons{
+    display: flex;
+    bottom: -25%;
+    position: absolute;
+    justify-content: space-between;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+.buttons button{
+    padding: 10px;
+ 
+}
+
+.back-to-top a{
+    color: white;
+    padding-top: 20px;
+    font-size: large;
+    font-weight: bold;
+    
+}
+.adress{
+    padding: 10px;
+}
+.newAdress{
+    content: "Via Europa";
+}
+.footer {
+    margin-top: 10px;
+    bottom: -50%;
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background-color: #1b2430;    
+    text-align: center;
+}
+.footer p {
+    top: 30%;
+    height: 20px;
+    text-align: center;
+    position: relative;
+    color: white;
+}

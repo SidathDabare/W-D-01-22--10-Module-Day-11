@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Amazon</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <p>MOBILE PHONES</p>
+        <!-- <img src="./assets/logo.png" alt="logo" class="logo" /> -->
+      </div>
+    </div>
+    <div class="nav-link">
+      <ul class="nav-items">
+        <li><a class="nav-item" href="">All</a></li>
+        <li><a class="nav-item" href="">Today's deals</a></li>
+        <li><a class="nav-item" href="">Customer Service</a></li>
+        <li><a class="nav-item" href="">Registry</a></li>
+        <li><a class="nav-item" href="">Gift Cards</a></li>
+        <li><a class="nav-item" href="">Sell</a></li>
+      </ul>
+    </div>
+    <div class="holiday-gift-card">
+      <p>Shop All Holiday Gift Cards</p>
+    </div>
+    <div class="holiday-guides">
+      <img src="./assets/bg-image.png" alt="bg-image" class="bg-image" />
+      <div class="holiday-gift-guide">
+        <h2>Holiday Gift Guides</h2>
+        <p>Be a go-gifter</p>
+      </div>
+    </div>
+    <div class="find-gift">
+      <div class="gift-items">
+        <!-- <h4>Find the perfect gift <span>Shop now</span></h4> -->
+
+        <div class="product-main-container">
+          <ul class="product-list">
+            <li class="product-item">
+              <div class="product-image-container">
+                <a href="https://www.amazon.com/Simple-Mobile-SAMSUNG-Prepaid-Smartphone/dp/B08WJMSJ23/ref=sr_1_1_sspa?crid=2TMOK9BRE90BP&keywords=mobile+phone&qid=1649678978&sprefix=mobile+%2Caps%2C180&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyUTIxRkNJWjVUMkxCJmVuY3J5cHRlZElkPUEwNDY4NzEyMjlLSjA3OTNFNkZNSCZlbmNyeXB0ZWRBZElkPUEwNjE2ODk3Mk40SE5UTkJHMEE4OCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU="
+                  ><img class="product-image" src="https://m.media-amazon.com/images/I/61Z6Lm7fviL._AC_SX679_.jpg" alt=""
+                /></a>
+              </div>
+              <div class="product-decription">
+                <a href="https://www.amazon.com/Simple-Mobile-SAMSUNG-Prepaid-Smartphone/dp/B08WJMSJ23/ref=sr_1_1_sspa?crid=2TMOK9BRE90BP&keywords=mobile+phone&qid=1649678978&sprefix=mobile+%2Caps%2C180&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyUTIxRkNJWjVUMkxCJmVuY3J5cHRlZElkPUEwNDY4NzEyMjlLSjA3OTNFNkZNSCZlbmNyeXB0ZWRBZElkPUEwNjE2ODk3Mk40SE5UTkJHMEE4OCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=">
+                <h1 class="product-name">Samsung Galaxy S10 Lite 4G</h1></a>
+                <p class="description">  Capture Beautiful Pictures Even In Low Light With The 48Mp Main
+                Camera On The Stylish Samsung Galaxy S10 Lite From Simple</p>
+                <button class="add-to-cart">ADD TO CART</button>
+              </div>
+            </li>     
+          </ul>
+           </div>
+        </div>
+      </div>
+    </div>
+
+<div class="buttons">
+  <button onclick="changeH1 ()">Change H1</button>
+  <button onclick="hangeBackground ()">Change Background</button>
+  <button onclick="changeFooterAdress ()">Change Footer Adress</button>
+</div>
+      <div class="footer">
+        <p>MOBILE PHONES</p>
+        <p class="adress">Via Roma 05, Padova, Italy</p>
+      </div>
+  <script>
+    function changeH1 (){
+      let changeText = document.querySelector(".product-name");
+      changeText.classList.add("newColor");
+    }
+    function changeBackground (){
+      let changeBG = document.querySelector(".product-main-container");
+      changeBG .classList.add("newBackground");
+    }
+    function changeFooterAdress (){
+      let changeAdress = document.querySelector(".adress");
+      changeAdress.changeText.add("newAdress");
+    }
+  </script>
+  </body>
+</html>
