@@ -4,7 +4,7 @@
 }
 body {
     width: 100%;
-    background-color: rgb(231, 231, 231);
+    /* background-color: rgb(231, 231, 231); */
     margin: auto;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -55,165 +55,97 @@ ul.nav-items{
     text-decoration: none;
     list-style: none;
 }
-.holiday-gift-card {
-    width: 95%;
-    height: 5vh;
-    background-color: rgb(207, 114, 7);
-    text-align: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    
-}
-.holiday-gift-card p{
-    color: white;
-    padding-top: 11px;
-}
-.holiday-guides{
-    width: 95%;
-    margin: auto;
-    margin-bottom: 25px;
+/* -------------------------------------------------- */
+.header-container{
     position: relative;
-
-}
-.holiday-gift-guide{
-    position: absolute;
-    top: 30%;
-    left: 42%;
-    text-align: center;
-    color: white;
-}
-.holiday-gift-guide h2 p{
-    text-align: center;
-    padding: 10px;
-}
-.holiday-gift-guide p{
-    padding: 20px;
-}
-.bg-image {
-    width: 100%;
-}
-.find-gift {
     width: 95%;
-    background-color: white;
-
-}
-.find-gift h4 {
-    padding-top: 20px;
-    padding-left: 25px;
-
-}
-.gift-items div{
-    width: 98%;
-    display: inline;
-    margin: auto;
-    
-}
-.gift-items h4 span{
-    color: rgb(33, 33, 182);
-    margin-left: 20px;
-    
-}
-.product-main-container{
-    position: relative;
-    width: 90%;
-    height: auto;
-    background-color: #1b2430;
-}
-ul.product-list {
-    list-style: none; 
-    width: 90%;
-    height: auto;  
-    position: relative; 
+    height: 90vh;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+    /* background-color: rgb(40, 133, 214); */
 }
-
-.product-item{
-    background-color: rgb(215, 215, 215);
-    display: flex;
-    flex-direction: column;
+table{
+    width: 80%;
+    height: 100%;
+    /* border: 1px solid black; */
+    justify-content: space-around;
+    margin-top: 1%;
+    position: absolute;
+    left: 20%;
+}
+tr,td{
+    height:120px;
+    border-right: 1px solid rgb(186, 186, 186);
+    border-bottom: 1px solid rgb(186, 186, 186);
+}
+td:first-child{
+    width: 35%;
+    /* background-color: rgb(179, 179, 179); */
 }
 .product-image{
-    width: 30%;
+    height: 120px;
+    width: auto;
+    margin-left: 35%;
 }
-.product-container{
-    display: flex;
-    width: 90%;
-    margin: 0 auto;
+td:last-child{
+    width: 65%;
+    /* background-color: rgb(179, 179, 179); */
+    text-align: left;
 }
-.product-image-container{
-    position: absolute;
-    width: 30%;
-    height: auto;
-    left: 0;
-    /* background-color: #293d58; */
+td:last-child h3,p,button{
+    margin-left: 30px;
 }
-.product-image-container img {
-    width: 300px;
-    height: 300px;    
-    object-fit: cover;
-    border-radius: 10px;
-    justify-content: space-between;
-    box-shadow: 5px 5px 5px 5px rgba(150, 149, 149, 0.2);
-    margin: 27px;
-    
-    
-}
-.product-decription{
-    display: flex;
-    flex-direction: column;
-    max-width: 65%;
-    height: 300px;
-    position: absolute;
-    /* background-color: #293d58; */
-    left: 35%;
-    margin-top:20px ;
-    padding: 20px;
-    
-}
-.product-decription a{
+td:last-child h3,a{
     text-decoration: none;
-    color: rgb(61, 60, 60);
-    
 }
-.product-name{
-    padding: 30px 0 30px 0;
-    font-size: 25px;
-    margin-left: 80px;
+td:last-child p{
+    padding-top: 5px;
+    font-size: 12px;
 }
-.newColor{
-    color: aqua;
+.product-price{
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 100px;
+    color: rgb(2, 43, 43);
 }
-.newBackground{
-    background-color: rgb(65, 66, 66);
+.product-price span:last-child{
+    margin-top: -30px;
+
 }
-p.description{
-    text-align: justify;
-    width: 80%;
-    padding: 30px 0 30px 0;
-    
-}
-.add-to-cart{
-    padding: 20px;
-    margin-left: 90px;
-    margin-top: 20px;
+
+button.add-to-cart{
+    padding: 10px;  
+    border-radius: 10px;
+    background-color: aqua;
+    cursor: pointer;
+    top: -50px;
 }
 
 .footer{
     width: 100%;
 }
+.footer p:first-child{
+    font-size: 22px;
+    font-weight: bold;
+}
+.footer p:last-child{
+    margin-top: 20px;
+}
 .buttons{
+    margin-top: 1%;
     display: flex;
-    bottom: -25%;
+    flex-direction: column;
     position: absolute;
     justify-content: space-between;
-    margin: auto;
-    left: 0;
-    right: 0;
+    width: 20%;
+    height: 100%;
+    background-color: #293d58;
+   
 }
 .buttons button{
     padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    cursor: pointer;
  
 }
 
@@ -224,12 +156,27 @@ p.description{
     font-weight: bold;
     
 }
-.adress{
-    padding: 10px;
+.text-area-container {
+    position: relative;
+    width: 95%;
+    height: 20vh;
+    margin: auto;
+    margin-top: 30px;
+    background-color: rgb(11, 73, 129);
+
 }
-.newAdress{
-    content: "Via Europa";
+.text-area-container textarea {
+    position:absolute;
+    width: 95%;
+    height: 18vh;
+    margin: 0 auto;
+    top: 5px;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+
 }
+
 .footer {
     margin-top: 10px;
     bottom: -50%;
@@ -245,4 +192,15 @@ p.description{
     text-align: center;
     position: relative;
     color: white;
+}
+/* -----------Changing Action--------- */
+
+.change-text-color{
+    color: aqua;
+}
+.changeBG{
+    background-color: #d1e2f8;
+}
+.hide-image{
+    opacity: 0;
 }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Amazon</title>
+    <title>Mobile Shop</title>
   </head>
   <body>
     <div class="navbar">
@@ -24,64 +24,224 @@
         <li><a class="nav-item" href="">Sell</a></li>
       </ul>
     </div>
-    <div class="holiday-gift-card">
-      <p>Shop All Holiday Gift Cards</p>
-    </div>
-    <div class="holiday-guides">
-      <img src="./assets/bg-image.png" alt="bg-image" class="bg-image" />
-      <div class="holiday-gift-guide">
-        <h2>Holiday Gift Guides</h2>
-        <p>Be a go-gifter</p>
+    <div class="header-container">
+      <div class="buttons">
+        <button onclick="changeH1()">Change H1</button>
+        <button onclick="changeBackground()">Change Background</button>
+        <button onclick="changeFooterAdress ()">Change Footer Adress</button>
+        <button onclick="addNewClaas()">Add Class to Amazon Link</button>
+        <button onclick="imageVisibility()">Show Image</button>
+        <button onclick="generateRandomColor()">Random Color Price</button>
       </div>
-    </div>
-    <div class="find-gift">
-      <div class="gift-items">
-        <!-- <h4>Find the perfect gift <span>Shop now</span></h4> -->
+      <div class="rightContainer">
+        <table class="detailsTable">
+          <tr>
+            <td>
+              <img
+                class="product-image"
+                src="https://m.media-amazon.com/images/I/618LuqyIX6L._AC_SX679_.jpg"
+                alt=""
+              />
+            </td>
+            <td>
+              <h3>
+                <a
+                  class="product-name"
+                  href="https://www.amazon.com/Samsung-Unlocked-Supported-Smartphone-International/dp/B09G72KR4D/ref=sr_1_1?crid=18K0WWJ74Z74U&keywords=mobile+phone&qid=1649710004&sprefix=mobile+phone%2Caps%2C220&sr=8-1"
+                >
+                  Samsung Galaxy A12 (A127F) 128GB Dual SIM
+                </a>
+              </h3>
+              <p>
+                6.5" 720 x 1600 (HD+) PLS TFT LCD Infinity-V Display, 5000mAh
+                Battery, Fingerprint (side-mounted) 128GB ROM, 4GB RAM, Exynos
+                850 (8nm), Octa-core (4x2.0 GHz Cortex-A55 & 4x2.0 GHz
+                Cortex-A55), Mali-G52, Android 11, One UI 3.1
+              </p>
 
-        <div class="product-main-container">
-          <ul class="product-list">
-            <li class="product-item">
-              <div class="product-image-container">
-                <a href="https://www.amazon.com/Simple-Mobile-SAMSUNG-Prepaid-Smartphone/dp/B08WJMSJ23/ref=sr_1_1_sspa?crid=2TMOK9BRE90BP&keywords=mobile+phone&qid=1649678978&sprefix=mobile+%2Caps%2C180&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyUTIxRkNJWjVUMkxCJmVuY3J5cHRlZElkPUEwNDY4NzEyMjlLSjA3OTNFNkZNSCZlbmNyeXB0ZWRBZElkPUEwNjE2ODk3Mk40SE5UTkJHMEE4OCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU="
-                  ><img class="product-image" src="https://m.media-amazon.com/images/I/61Z6Lm7fviL._AC_SX679_.jpg" alt=""
-                /></a>
-              </div>
-              <div class="product-decription">
-                <a href="https://www.amazon.com/Simple-Mobile-SAMSUNG-Prepaid-Smartphone/dp/B08WJMSJ23/ref=sr_1_1_sspa?crid=2TMOK9BRE90BP&keywords=mobile+phone&qid=1649678978&sprefix=mobile+%2Caps%2C180&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyUTIxRkNJWjVUMkxCJmVuY3J5cHRlZElkPUEwNDY4NzEyMjlLSjA3OTNFNkZNSCZlbmNyeXB0ZWRBZElkPUEwNjE2ODk3Mk40SE5UTkJHMEE4OCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=">
-                <h1 class="product-name">Samsung Galaxy S10 Lite 4G</h1></a>
-                <p class="description">  Capture Beautiful Pictures Even In Low Light With The 48Mp Main
-                Camera On The Stylish Samsung Galaxy S10 Lite From Simple</p>
-                <button class="add-to-cart">ADD TO CART</button>
-              </div>
-            </li>     
-          </ul>
-           </div>
-        </div>
+              <p>
+                <span class="product-price"> $199.99</span>
+                <span><button class="add-to-cart">ADD TO CART</button></span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                class="product-image"
+                src="https://m.media-amazon.com/images/I/61wnGv3Qc5L._AC_SX679_.jpg"
+                alt=""
+              />
+            </td>
+            <td>
+              <h3>
+                <a
+                  class="product-name"
+                  href="https://www.amazon.com/dp/B08ZGVJDLZ/ref=sspa_dk_detail_4?psc=1&pd_rd_i=B08ZGVJDLZ&pd_rd_w=N8tmr&pf_rd_p=b9951ce4-3bd8-4b04-9123-0fda35d6155e&pd_rd_wg=sghr1&pf_rd_r=BQ181W0S7REN4VWSPGZZ&pd_rd_r=36d53823-ce84-4b7a-bb25-0a2ee36acf4d&s=wireless&smid=A3QZ4GOG6ETYGB&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEySDlJMTJWWkxVOFkmZW5jcnlwdGVkSWQ9QTA1NDI3MDYxTVI0UzMyMVpRWUxJJmVuY3J5cHRlZEFkSWQ9QTEwMzgyODgxN0dJRllZRkVSWk9aJndpZGdldE5hbWU9c3BfZGV0YWlsJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ=="
+                >
+                  Samsung Galaxy A52 (128GB, 6GB) 6.5"
+                </a>
+              </h3>
+              <p>
+                - Accessories may not be original, but will be compatible and
+                fully functional. Product may come in generic Box. - Product
+                will come with a SIM removal tool, a charger and a charging
+                cable. Headphones and SIM card are not included.
+              </p>
+              <p>
+                <span class="product-price"> $199.99</span>
+                <span><button class="add-to-cart">ADD TO CART</button></span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                class="product-image"
+                src="https://m.media-amazon.com/images/I/615fYCdHfnL._AC_SX679_.jpg"
+                alt=""
+              />
+            </td>
+            <td>
+              <h3>
+                <a
+                  class="product-name"
+                  href="https://www.amazon.com/total-wireless-View-32GB-Black/dp/B09CLQ4YT3/ref=sr_1_1_sspa?keywords=4g+samsung+cell+phones&pd_rd_r=b5c8623b-5cb6-4206-bc2f-2bc9126aa41f&pd_rd_w=7PmtG&pd_rd_wg=tP5SJ&pf_rd_p=baee3516-e45b-42ba-859e-de5632f9c487&pf_rd_r=YN1QCARAJPJ1CH8MN006&qid=1649710071&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFOUDFEVUJTSTU0V1ImZW5jcnlwdGVkSWQ9QTA4Nzg5NDMyNUxDT1BYMzhIOEhIJmVuY3J5cHRlZEFkSWQ9QTA5NzE5MTZPTzE0MTU5QTg2WFkmd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl"
+                >
+                  TCL 10 SE Unlocked Android Smartphone
+                </a>
+              </h3>
+              <p>
+                Products with electrical plugs are designed for use in the US.
+                Outlets and voltage differ internationally and this product may
+                require an adapter or converter for use in your destination.
+                Please check compatibility before purchasing.
+              </p>
+              <p>
+                <span class="product-price"> $199.99</span>
+                <span><button class="add-to-cart">ADD TO CART</button></span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                class="product-image"
+                src="https://m.media-amazon.com/images/I/51lW4RW48jL._AC_SX679_.jpg"
+                alt=""
+              />
+            </td>
+            <td>
+              <h3>
+                <a
+                  class="product-name"
+                  href="https://www.amazon.com/dp/B08J5DRB63/ref=sspa_dk_detail_4?psc=1&pd_rd_i=B08J5DRB63&pd_rd_w=7kwJQ&pf_rd_p=b9951ce4-3bd8-4b04-9123-0fda35d6155e&pd_rd_wg=RUgeE&pf_rd_r=9NHEWFQTPHTDA9PDDZY3&pd_rd_r=1c73ae5c-a376-434d-b637-0db9f40ecb52&s=wireless&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExVzVYVTM5VUY0V00mZW5jcnlwdGVkSWQ9QTA5NTM3NDEyWTZTR1owUzJGVU05JmVuY3J5cHRlZEFkSWQ9QTA0ODMxMzUzQTQ0TEU2QVdaRTNDJndpZGdldE5hbWU9c3BfZGV0YWlsJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ=="
+                >
+                  Samsung Galaxy S20 FE (256GB, 8GB) 6.5</a
+                >
+              </h3>
+              <p>
+                To the value seekers and great deal getters. You’re in the
+                market for a smartphone that accomplishes the essentials, one
+                that looks and feels great. And you also love to make and share
+                memories, so you need a camera that’s sharp and quick.
+              </p>
+              <p>
+                <span class="product-price"> $199.99</span>
+                <span><button class="add-to-cart">ADD TO CART</button></span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                class="product-image"
+                src="https://m.media-amazon.com/images/I/717KHGCJ6eL._AC_SX679_.jpg"
+                alt=""
+              />
+            </td>
+            <td>
+              <h3>
+                <a
+                  class="product-name"
+                  href="https://www.amazon.com/Apple-iPhone-XR-Fully-Unlocked/dp/B07P6Y7954/ref=sr_1_2?crid=CI0SWHJ7QQB4&keywords=iphone&qid=1649710178&sprefix=ip%2Caps%2C171&sr=8-2"
+                >
+                  Apple iPhone XR, 64GB, Black - Unlocked</a
+                >
+              </h3>
+              <p>
+                - This pre-owned product is not Apple certified, but has been
+                professionally inspected, tested and cleaned by Amazon-qualified
+                suppliers. - There will be no visible cosmetic imperfections
+                when held at an arm’s length. - This product will have a battery
+                which exceeds 80% capacity relative to new
+              </p>
+              <p>
+                <span class="product-price"> $199.99</span>
+                <span><button class="add-to-cart">ADD TO CART</button></span>
+              </p>
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
+    <div class="text-area-container">
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+    </div>
 
-<div class="buttons">
-  <button onclick="changeH1 ()">Change H1</button>
-  <button onclick="hangeBackground ()">Change Background</button>
-  <button onclick="changeFooterAdress ()">Change Footer Adress</button>
-</div>
-      <div class="footer">
-        <p>MOBILE PHONES</p>
-        <p class="adress">Via Roma 05, Padova, Italy</p>
-      </div>
-  <script>
-    function changeH1 (){
-      let changeText = document.querySelector(".product-name");
-      changeText.classList.add("newColor");
-    }
-    function changeBackground (){
-      let changeBG = document.querySelector(".product-main-container");
-      changeBG .classList.add("newBackground");
-    }
-    function changeFooterAdress (){
-      let changeAdress = document.querySelector(".adress");
-      changeAdress.changeText.add("newAdress");
-    }
-  </script>
+    <div class="footer">
+      <p>MOBILE PHONES</p>
+      <p class="adress">Via Roma 05, Padova, Italy</p>
+    </div>
+    <script>
+      function changeH1(aa) {
+        aa = document.querySelectorAll("a");
+
+        for (let i = 0; i <= aa.length; i++) {
+          aa[i].classList.toggle("change-text-color");
+        }
+        return aa;
+      }
+      function changeBackground() {
+        let changeBG = document.querySelector("body");
+        changeBG.classList.toggle("changeBG");
+      }
+      function changeFooterAdress() {
+        document.querySelector(".adress").innerText = "The new text I want";
+      }
+      function addNewClaas(link) {
+        link = document.querySelectorAll("a");
+        for (let i = 0; i <= link.length; i++) {
+          link[i].classList.add("addNewClassAmazon");
+        }
+        return link;
+      }
+      function imageVisibility(show) {
+        show = document.querySelectorAll(".product-image");
+        for (let i = 0; i <= show.length; i++) {
+          show[i].classList.toggle("hide-image");
+        }
+        return show;
+      }
+      function generateRandomColor(price) {
+        var letters = "0123456789ABCDEF";
+        var colorRandom = "#";
+        for (var i = 0; i < 6; i++) {
+          colorRandom += letters[Math.floor(Math.random() * 16)];
+        }
+        return console.log(JSON.stringify(colorRandom));
+
+        function changePriceColor(colorRandom) {
+          price = document.querySelectorAll(".product-price");
+          for (let i = 0; i <= price.length; i++) {
+            return (price[i].style.color = colorRandom);
+          }
+        }
+      }
+      // let result = generateRandomColor();
+      // console.log(result);
+
+      // changePriceColor(result);
+    </script>
   </body>
 </html>
